@@ -273,12 +273,20 @@ $base-pad: 1rem;
     grid-template-columns: 3fr 2fr 1fr;
     grid-template-rows: 1fr;
     .pictures {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
       .main-img {
         margin-top: 2.5rem;
+        height: clamp(350px, 40vh, 452px);
+        width: clamp(570px, 35vw, 679px);
         .main-img-container {
-          background: url("/assets/images/pickelcohel.jpg") no-repeat 0 0;
-          width: 679px;
-          height: 452px;
+          background: url("/assets/images/pickelcohel.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
         }
       }
       p {
@@ -294,13 +302,37 @@ $base-pad: 1rem;
           margin: 3px;
           border: 1px solid #cccccc;
         }
-        .test {
-          background-color: #f08804;
-        }
-        .one:hover ~ .test {
-          background-color: green;
-        }
       }
+    }
+  }
+  .item-data {
+    max-width: 425px;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    a {
+      font-size: 0.9rem;
+      color: #007185;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #c7511f;
+      text-decoration: underline;
+    }
+    .rating {
+      margin: 0.5rem;
+      .stars {
+        display: inline-block;
+        background: url("/assets/images/3-fm1Jbg4IHlyhq.png") no-repeat -390px -206px;
+        width: 95px;
+        height: 18px;
+      }
+    }
+    .amazon-choice-holder {
+      margin: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #cccccc;
     }
   }
 }

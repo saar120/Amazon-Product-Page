@@ -219,24 +219,52 @@
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;
     grid-template-rows: 1fr; }
-    .main .main-container .pictures .main-img {
-      margin-top: 2.5rem; }
-      .main .main-container .pictures .main-img .main-img-container {
-        background: url("/assets/images/pickelcohel.jpg") no-repeat 0 0;
-        width: 679px;
-        height: 452px; }
-    .main .main-container .pictures p {
-      margin-top: 2.5rem;
-      text-align: center;
-      font-size: 0.8rem; }
-    .main .main-container .pictures ul {
+    .main .main-container .pictures {
       display: flex;
-      justify-content: center;
-      list-style: none; }
-      .main .main-container .pictures ul li {
-        margin: 3px;
-        border: 1px solid #cccccc; }
-      .main .main-container .pictures ul .test {
-        background-color: #f08804; }
-      .main .main-container .pictures ul .one:hover ~ .test {
-        background-color: green; }
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+      .main .main-container .pictures .main-img {
+        margin-top: 2.5rem;
+        height: clamp(350px, 40vh, 452px);
+        width: clamp(570px, 35vw, 679px); }
+        .main .main-container .pictures .main-img .main-img-container {
+          background: url("/assets/images/pickelcohel.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+      .main .main-container .pictures p {
+        margin-top: 2.5rem;
+        text-align: center;
+        font-size: 0.8rem; }
+      .main .main-container .pictures ul {
+        display: flex;
+        justify-content: center;
+        list-style: none; }
+        .main .main-container .pictures ul li {
+          margin: 3px;
+          border: 1px solid #cccccc; }
+  .main .item-data {
+    max-width: 425px; }
+    .main .item-data h3 {
+      font-size: 1.5rem;
+      font-weight: 300; }
+    .main .item-data a {
+      font-size: 0.9rem;
+      color: #007185;
+      text-decoration: none; }
+    .main .item-data a:hover {
+      color: #c7511f;
+      text-decoration: underline; }
+    .main .item-data .rating {
+      margin: 0.5rem; }
+      .main .item-data .rating .stars {
+        display: inline-block;
+        background: url("/assets/images/3-fm1Jbg4IHlyhq.png") no-repeat -390px -206px;
+        width: 95px;
+        height: 18px; }
+    .main .item-data .amazon-choice-holder {
+      margin: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #cccccc; }

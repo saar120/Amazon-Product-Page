@@ -1,2 +1,14 @@
+@font-face {
+  font-family: "amazon";
+  src: url(/assets/fonts/Ember/Amazon-Ember-Medium.ttf);
+  format: "truetype"; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid brown; }
+
 body {
+  font-family: amazon;
+  font-weight: 700;
   color: brown; }

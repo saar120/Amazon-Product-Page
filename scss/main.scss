@@ -1,5 +1,15 @@
-$color: brown;
+@import "fonts";
 
+$color: brown;
+$main-font: amazon;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid $color;
+}
 body {
+  font-family: $main-font;
+  font-weight: 700;
   color: $color;
 }

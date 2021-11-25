@@ -237,3 +237,70 @@ $base-pad: 1rem;
     }
   }
 }
+
+.main {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1500px;
+  background-color: #fff;
+  .black-friday {
+    .img {
+      margin: 0 auto;
+      background: url("/assets/images/Fuji_BF_ILM_1X._CB652848759_.jpg") no-repeat 0 0;
+      width: 650px;
+      height: 45px;
+    }
+  }
+  .bread-crumbs {
+    display: flex;
+    justify-content: flex-start;
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      li {
+        font-size: 0.8rem;
+        margin: 10px 10px;
+        opacity: 0.75;
+      }
+      li:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .main-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    .pictures {
+      .main-img {
+        margin-top: 2.5rem;
+        .main-img-container {
+          background: url("/assets/images/pickelcohel.jpg") no-repeat 0 0;
+          width: 679px;
+          height: 452px;
+        }
+      }
+      p {
+        margin-top: 2.5rem;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        li {
+          margin: 3px;
+          border: 1px solid #cccccc;
+        }
+        .test {
+          background-color: #f08804;
+        }
+        .one:hover ~ .test {
+          background-color: green;
+        }
+      }
+    }
+  }
+}

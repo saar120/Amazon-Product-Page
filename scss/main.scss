@@ -19,18 +19,20 @@ $base-pad: 1rem;
     background-color: #131921;
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 6fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 9fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
     grid-template-rows: 1fr;
     .amazon-logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 10px 30px;
+      margin-left: 20px;
       .logo-container {
+        border: 1px solid transparent;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5px;
+        padding: 10px 5px;
         .logo {
           background: url("/assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -10px -51px;
           width: 96px;
@@ -38,6 +40,7 @@ $base-pad: 1rem;
         }
       }
       .logo-container:hover {
+        border-radius: 3px;
         border: 1px solid #ffffff;
       }
     }
@@ -47,12 +50,13 @@ $base-pad: 1rem;
       align-items: center;
       padding: 5px;
       .container {
+        border: 1px solid transparent;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        padding: 5px;
+        padding: 10px 5px;
         width: 100px;
         .co {
           display: flex;
@@ -69,6 +73,7 @@ $base-pad: 1rem;
         }
       }
       .container:hover {
+        border-radius: 3px;
         border: 1px solid #ffffff;
       }
     }
@@ -103,6 +108,132 @@ $base-pad: 1rem;
     }
     .country {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      .container {
+        border: 1px solid transparent;
+        display: flex;
+        flex-direction: row;
+        padding: 18px 5px;
+        .flag {
+          background: url("/assets/images/arazot.png") no-repeat 0 -130px;
+          width: 24px;
+          height: 18px;
+          margin-right: 5px;
+        }
+        i {
+          opacity: 0.75;
+        }
+      }
+      .container:hover {
+        border-radius: 3px;
+        border: 1px solid #ffffff;
+      }
+    }
+    .sign-in {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container {
+        border: 1px solid transparent;
+        padding: 10px 5px;
+        .text {
+          min-width: 128px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          span:first-of-type {
+            font-size: 0.7rem;
+          }
+          i {
+            opacity: 0.75;
+          }
+        }
+      }
+      .container:hover {
+        border-radius: 3px;
+        border: 1px solid #ffffff;
+      }
+    }
+    .returns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container {
+        border: 1px solid transparent;
+        padding: 10px 5px;
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          span:first-of-type {
+            font-size: 0.7rem;
+          }
+          span {
+            white-space: nowrap;
+          }
+        }
+      }
+      .container:hover {
+        border-radius: 3px;
+        border: 1px solid #ffffff;
+      }
+    }
+    .cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container {
+        margin-right: 10px;
+        padding: 10px 5px;
+        display: flex;
+        .cart-logo {
+          position: relative;
+          background: url("/assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -10px -340px;
+          width: 38px;
+          height: 26px;
+          span {
+            color: #f08804;
+            position: absolute;
+            bottom: 12px;
+            left: 17px;
+          }
+        }
+        p {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+  .tabs-nav {
+    background-color: #232f3e;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      margin: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      li {
+        border: 1px solid transparent;
+        margin: 2px 10px;
+        padding: 4px 5px;
+        white-space: nowrap;
+        .burger {
+          display: inline-block;
+          background: url("/assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -136px -255px;
+          width: 20px;
+          height: 18px;
+          padding-right: 4px;
+        }
+      }
+      li:hover {
+        border-radius: 3px;
+        border: 1px solid #ffffff;
+      }
     }
   }
 }

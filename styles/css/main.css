@@ -6,9 +6,83 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid brown; }
-
-body {
   font-family: amazon;
-  font-weight: 700;
-  color: brown; }
+  box-sizing: border-box; }
+
+.navbar {
+  color: #ffffff; }
+  .navbar .search-nav {
+    max-height: 70px;
+    min-height: 65px;
+    background-color: #131921;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 6fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; }
+    .navbar .search-nav .amazon-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 30px; }
+      .navbar .search-nav .amazon-logo .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px; }
+        .navbar .search-nav .amazon-logo .logo-container .logo {
+          background: url("/assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -10px -51px;
+          width: 96px;
+          height: 29px; }
+      .navbar .search-nav .amazon-logo .logo-container:hover {
+        border: 1px solid #ffffff; }
+    .navbar .search-nav .deliver-to {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px; }
+      .navbar .search-nav .deliver-to .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 5px;
+        width: 100px; }
+        .navbar .search-nav .deliver-to .container .co {
+          display: flex;
+          flex-direction: column; }
+          .navbar .search-nav .deliver-to .container .co span:first-of-type {
+            opacity: 0.75;
+            font-size: 0.6rem; }
+        .navbar .search-nav .deliver-to .container .logo {
+          background: url("/assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png") no-repeat -71px -379px;
+          width: 17px;
+          height: 17px; }
+      .navbar .search-nav .deliver-to .container:hover {
+        border: 1px solid #ffffff; }
+    .navbar .search-nav .search-bar {
+      display: flex;
+      height: 2.2rem; }
+      .navbar .search-nav .search-bar button:first-of-type {
+        border: none;
+        padding-left: 5px;
+        border-right: 1px solid darkgray;
+        border-radius: 6px 0 0 6px;
+        font-size: 0.8rem;
+        width: 60px; }
+        .navbar .search-nav .search-bar button:first-of-type i {
+          margin-left: 10px;
+          margin-right: 5px; }
+      .navbar .search-nav .search-bar input {
+        padding-left: 5px;
+        border: none;
+        outline: none;
+        width: 90%; }
+      .navbar .search-nav .search-bar button:last-of-type {
+        border: none;
+        outline: none;
+        border-radius: 0 6px 6px 0;
+        background-color: #f3a847;
+        width: 50px; }
+    .navbar .search-nav .country {
+      display: flex; }

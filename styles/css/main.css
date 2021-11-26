@@ -249,7 +249,7 @@
     max-width: 425px; }
     .main .item-data h3 {
       font-size: 1.5rem;
-      font-weight: 300; }
+      font-weight: 400; }
     .main .item-data a {
       font-size: 0.9rem;
       color: #007185;
@@ -268,3 +268,151 @@
       margin: 0.5rem;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid #cccccc; }
+    .main .item-data .desc .price {
+      font-size: 0.9rem;
+      opacity: 0.75;
+      margin-bottom: 0.6rem; }
+      .main .item-data .desc .price span {
+        font-size: 1.1rem;
+        color: #b12704; }
+    .main .item-data .desc .shipping {
+      font-size: 0.9rem;
+      color: #6b6b6b;
+      margin-bottom: 0.6rem; }
+      .main .item-data .desc .shipping span {
+        color: #007185;
+        margin-left: 0.15rem; }
+      .main .item-data .desc .shipping span:hover {
+        color: #c7511f;
+        text-decoration: underline; }
+      .main .item-data .desc .shipping i {
+        font-size: 0.6rem; }
+    .main .item-data .desc .table {
+      display: flex;
+      border-bottom: 1px solid #cccccc; }
+      .main .item-data .desc .table ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 30%; }
+        .main .item-data .desc .table ul li {
+          margin: 0.2rem 0.5rem;
+          font-size: 0.9rem; }
+      .main .item-data .desc .table .text {
+        width: 70%; }
+      .main .item-data .desc .table .text li {
+        margin: 0.5rem 0.3rem; }
+  .main .about-product h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem; }
+  .main .about-product ul {
+    margin-left: 1rem; }
+    .main .about-product ul li {
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem; }
+  .main .side-panel {
+    margin-left: 1rem;
+    min-width: 15rem; }
+    .main .side-panel .buy-card {
+      border: solid 1px #cccccc;
+      border-radius: 10px;
+      padding: 1.2rem;
+      margin-right: 1rem; }
+      .main .side-panel .buy-card .bold-price {
+        font-size: 1.1rem;
+        color: #b12704;
+        margin-bottom: 0.3rem; }
+      .main .side-panel .buy-card .shipping {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+        color: #6b6b6b; }
+        .main .side-panel .buy-card .shipping span {
+          color: #007185;
+          margin-left: 0.15rem; }
+        .main .side-panel .buy-card .shipping span:hover {
+          color: #c7511f;
+          text-decoration: underline; }
+        .main .side-panel .buy-card .shipping i {
+          font-size: 0.5rem; }
+      .main .side-panel .buy-card .arival {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem; }
+      .main .side-panel .buy-card i {
+        font-size: 0.8rem; }
+      .main .side-panel .buy-card a {
+        font-size: 0.75rem;
+        color: #007185;
+        text-decoration: none; }
+      .main .side-panel .buy-card a:hover {
+        color: #c7511f;
+        text-decoration: underline; }
+      .main .side-panel .buy-card .stock {
+        font-size: 1.1rem;
+        color: #1a7d16;
+        margin-bottom: 0.3rem; }
+      .main .side-panel .buy-card .qty {
+        background-color: #e3e6e6;
+        box-shadow: 0px 1px 5px 0px #8f8f8f;
+        border-top: 1px solid #cccccc;
+        border-radius: 7px;
+        width: 35%;
+        margin: 1rem 0;
+        padding: 0.2rem 0.3rem; }
+        .main .side-panel .buy-card .qty p {
+          font-size: 0.9rem; }
+          .main .side-panel .buy-card .qty p i {
+            font-size: 0.6rem; }
+      .main .side-panel .buy-card .add-to-cart {
+        text-align: center;
+        background-color: #ffd712;
+        padding: 0.5rem 1rem;
+        border-radius: 22px;
+        margin: 0.5rem 0;
+        font-size: 0.8rem; }
+      .main .side-panel .buy-card .buy-now {
+        text-align: center;
+        background-color: #ffa41b;
+        padding: 0.5rem 1rem;
+        border-radius: 22px;
+        margin: 1rem 0;
+        font-size: 0.8rem; }
+      .main .side-panel .buy-card .table {
+        margin: 0.5rem 0;
+        display: flex; }
+        .main .side-panel .buy-card .table ul {
+          margin-left: 0.5rem;
+          font-size: 0.8rem;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; }
+          .main .side-panel .buy-card .table ul li {
+            color: #6b6b6b;
+            margin: 0.2rem 0; }
+      .main .side-panel .buy-card .returns {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem; }
+        .main .side-panel .buy-card .returns span {
+          color: #007185;
+          margin-left: 0.15rem; }
+          .main .side-panel .buy-card .returns span i {
+            color: #6b6b6b; }
+      .main .side-panel .buy-card .check-box {
+        border-bottom: 1px solid #cccccc;
+        padding: 0.3rem 0; }
+        .main .side-panel .buy-card .check-box label {
+          font-size: 0.8rem; }
+      .main .side-panel .buy-card .add-li-btn {
+        display: flex;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 2rem;
+        display: inline-block;
+        text-align: left;
+        border: transparent solid 1px;
+        border-radius: 5px;
+        background-color: #eeeff2; }

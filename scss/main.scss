@@ -306,7 +306,7 @@ $base-pad: 1rem;
     }
   }
   .item-data {
-    max-width: 425px;
+    min-width: 425px;
     h3 {
       font-size: 1.5rem;
       font-weight: 400;

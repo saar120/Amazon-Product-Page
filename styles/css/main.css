@@ -246,7 +246,7 @@
           margin: 3px;
           border: 1px solid #cccccc; }
   .main .item-data {
-    max-width: 425px; }
+    min-width: 425px; }
     .main .item-data h3 {
       font-size: 1.5rem;
       font-weight: 400; }

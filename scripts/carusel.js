@@ -1,9 +1,9 @@
 "use strict";
 
-const items = [
+const itemsObj = [
   {
     id: 1,
-    img: "",
+    img: "/assets/images/itemsimages/download-1.jpg",
     description: "Rick and Morty Lanyard with ID Holder, Portal Gun Rubber Charm and Sticker ",
     stars: "",
     rating: 320,
@@ -98,3 +98,20 @@ const items = [
     price: 40.0,
   },
 ];
+
+const rightButton = document.querySelector(".right-btn");
+const leftButton = document.querySelector(".left-btn");
+const items = document.querySelectorAll(".item");
+const rightButtonClick = rightButton.addEventListener("click", changeItems);
+
+function changeItems() {
+  items.forEach((item, index) => {
+    item.innerHTML = `<img src="${itemsObj[index].img}" alt=""/>
+    <div class="item-text">${itemsObj[index].description}</div>
+    <div class="rating">
+    <span class="rat-stars"></span>
+    <span class="span rt-nums">${itemsObj[index].rating}</span>
+    </div>
+    <div class="price">$<span class="item-price">${itemsObj[index].price}</span></div>`;
+  });
+}

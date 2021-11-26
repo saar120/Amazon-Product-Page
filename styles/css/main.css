@@ -452,3 +452,63 @@
         border: #8f8f8f solid 1px;
         font-size: 0.8rem;
         border-radius: 5px; }
+  .main .carusel {
+    margin: 2rem 0;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; }
+    .main .carusel .headline ul {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none; }
+    .main .carusel p {
+      padding: 0.5rem;
+      font-size: 0.8rem; }
+  .main .crsl-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 330px; }
+    .main .crsl-container .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 35px;
+      min-width: 35px;
+      background-color: #f7fafa;
+      border: 1px solid #cccccc;
+      border-radius: 6px; }
+  .main .items-holder {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr; }
+    .main .items-holder .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0.5rem; }
+      .main .items-holder .item img,
+      .main .items-holder .item .item-text,
+      .main .items-holder .item .rating,
+      .main .items-holder .item .price {
+        padding: 0.4rem 0; }
+      .main .items-holder .item .item-text {
+        font-size: 0.9rem;
+        color: #007185; }
+      .main .items-holder .item .item-text:hover {
+        color: #f08804;
+        text-decoration: underline; }
+      .main .items-holder .item .rat-stars {
+        display: inline-block;
+        background: url("/assets/images/3-fm1Jbg4IHlyhq.png") no-repeat -390px -206px;
+        width: 95px;
+        height: 18px; }
+      .main .items-holder .item .rt-nums {
+        color: #007185;
+        font-size: 0.8rem; }
+      .main .items-holder .item .price {
+        font-size: 1.1rem;
+        color: #b12704; }

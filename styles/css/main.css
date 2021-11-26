@@ -305,8 +305,8 @@
       .main .item-data .desc .table .text li {
         margin: 0.5rem 0.3rem; }
   .main .about-product h2 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem; }
+    padding: 0.5rem;
+    font-size: 1rem; }
   .main .about-product ul {
     margin-left: 1rem; }
     .main .about-product ul li {
@@ -406,13 +406,45 @@
           font-size: 0.8rem; }
       .main .side-panel .buy-card .add-li-btn {
         display: flex;
-        padding: 0.5rem;
         justify-content: center;
-        align-items: center;
-        width: 85%;
-        height: 2rem;
-        display: inline-block;
-        text-align: left;
-        border: transparent solid 1px;
+        width: 100%;
+        height: 1.8rem;
+        border: #8f8f8f solid 1px;
         border-radius: 5px;
+        margin-top: 1rem;
         background-color: #eeeff2; }
+        .main .side-panel .buy-card .add-li-btn p {
+          margin-top: 0.3rem;
+          margin-left: 0.3rem;
+          width: 80%; }
+        .main .side-panel .buy-card .add-li-btn .arrow-down {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-left: 1px solid #cccccc;
+          font-size: 0.8rem;
+          height: 100%;
+          width: 20%;
+          margin-left: 1rem; }
+    .main .side-panel .social {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center; }
+      .main .side-panel .social a {
+        font-size: 0.75rem;
+        color: #007185;
+        text-decoration: none; }
+      .main .side-panel .social a:hover {
+        color: #c7511f;
+        text-decoration: underline; }
+    .main .side-panel .sell {
+      text-align: center; }
+      .main .side-panel .sell p {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem; }
+      .main .side-panel .sell button {
+        padding: 0.3rem;
+        background-color: #ffffff;
+        border: #8f8f8f solid 1px;
+        font-size: 0.8rem;
+        border-radius: 5px; }

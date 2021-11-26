@@ -99,25 +99,44 @@ const itemsObj = [
   },
 ];
 
+// selectors
+
 const rightButton = document.querySelector(".right-btn");
 const leftButton = document.querySelector(".left-btn");
 const items = document.querySelectorAll(".item");
+let pageNum = document.querySelector(".page-num");
+
+// event listeners
+
 window.addEventListener("load", setItems);
 rightButton.addEventListener("click", changeItems);
 leftButton.addEventListener("click", setItems);
 
-function setItems(nextNum = 0) {
+// functions
+
+function setItems() {
+  pageNum.textContent = 1;
   items.forEach((item, index) => {
-    item.innerHTML = `<img src="${itemsObj[index + nextNum].img}" alt=""/>
-    <div class="item-text">${itemsObj[index + nextNum].description}</div>
+    item.innerHTML = `<img src="${itemsObj[index].img}" alt=""/>
+    <div class="item-text">${itemsObj[index].description}</div>
     <div class="rating">
     <span class="rat-stars"></span>
-    <span class="span rt-nums">${itemsObj[index + nextNum].rating}</span>
+    <span class="span rt-nums">${itemsObj[index].rating}</span>
     </div>
-    <div class="price">$<span class="item-price">${itemsObj[index + nextNum].price}</span></div>`;
+    <div class="price">$<span class="item-price">${itemsObj[index].price}</span></div>`;
   });
 }
 
+// let num
 function changeItems() {
-  setItems(6);
+  pageNum.textContent = 2;
+  items.forEach((item, index) => {
+    item.innerHTML = `<img src="${itemsObj[index + 6].img}" alt=""/>
+    <div class="item-text">${itemsObj[index + 6].description}</div>
+    <div class="rating">
+    <span class="rat-stars"></span>
+    <span class="span rt-nums">${itemsObj[index + 6].rating}</span>
+    </div>
+    <div class="price">$<span class="item-price">${itemsObj[index + 6].price}</span></div>`;
+  });
 }

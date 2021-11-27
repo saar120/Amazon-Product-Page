@@ -97,3 +97,31 @@
     }
   }
 }
+
+@media (max-width: 1400px) {
+  .items-holder {
+    grid-template-columns: repeat(5, 1fr) !important;
+
+    .item6 {
+      display: none !important;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .items-holder {
+    grid-template-columns: repeat(4, 1fr) !important;
+
+    .item5 {
+      display: none !important;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .items-holder {
+    grid-template-columns: repeat(3, 1fr) !important;
+
+    .item4 {
+      display: none !important;
+    }
+  }
+}

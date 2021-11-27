@@ -243,6 +243,7 @@
         justify-content: center;
         list-style: none; }
         .main .main-container .pictures ul li {
+          position: relative;
           margin: 3px;
           border: 1px solid #cccccc; }
   .main .item-data {
@@ -512,3 +513,70 @@
       .main .items-holder .item .price {
         font-size: 1.1rem;
         color: #b12704; }
+
+.mobile-only {
+  display: none; }
+
+@media (min-width: 200px) and (max-width: 450px) {
+  .mobile-only {
+    display: block !important; }
+  .mobile-hide {
+    display: none !important; }
+  .navbar .search-nav {
+    background-color: #202d3b;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between; }
+    .navbar .search-nav .amazon-logo {
+      justify-content: flex-start;
+      margin-left: 0; }
+    .navbar .search-nav .cart {
+      justify-content: flex-end;
+      margin-right: 0; }
+  .navbar .mobile-search {
+    display: flex;
+    background-color: #202d3b;
+    justify-content: center;
+    align-items: center;
+    height: 2.6rem; }
+    .navbar .mobile-search .search-bar {
+      display: flex;
+      justify-content: center;
+      height: 2rem; }
+    .navbar .mobile-search input {
+      border-radius: 6px 0 0 6px;
+      padding-left: 5px;
+      border: none;
+      outline: none;
+      width: 80%; }
+    .navbar .mobile-search button:last-of-type {
+      border: none;
+      outline: none;
+      border-radius: 0 6px 6px 0;
+      background-color: #f3a847;
+      width: 50px; }
+  .main {
+    min-width: 0;
+    max-width: none;
+    max-width: 100vw;
+    width: 100%; }
+    .main .black-friday .img {
+      margin: 0 auto;
+      background: url("/assets/mobileimg/Karu_CM_ILM_en_2X._CB651321467_.jpg") no-repeat 0 0;
+      background-size: 320px 45px;
+      width: 320px;
+      height: 45px; }
+    .main .main-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 3fr; }
+      .main .main-container .item-data {
+        min-width: 0;
+        order: 1; }
+        .main .main-container .item-data h3 {
+          font-size: 1.2rem; }
+      .main .main-container .pictures {
+        display: none;
+        order: 2; }
+      .main .main-container .side-panel {
+        margin: 0;
+        min-width: 0;
+        order: 3; } }

@@ -1,0 +1,8 @@
+@include media(">=200px", "<=450px") {
+  .mobile-only {
+    display: block;
+  }
+  .mobile-hide {
+    display: none;
+  }
+}

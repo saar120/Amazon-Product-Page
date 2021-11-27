@@ -445,7 +445,8 @@
       text-align: center; }
       .main .side-panel .sell p {
         font-size: 0.7rem;
-        margin-bottom: 0.5rem; }
+        margin-bottom: 0.5rem;
+        color: black; }
       .main .side-panel .sell button {
         padding: 0.3rem;
         background-color: #ffffff;

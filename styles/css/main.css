@@ -454,6 +454,7 @@
         border-radius: 5px; }
   .main .carusel {
     margin: 2rem;
+    padding: 2rem;
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc; }
     .main .carusel .headline ul {

@@ -108,35 +108,35 @@ let pageNum = document.querySelector(".page-num");
 
 // event listeners
 
-window.addEventListener("load", setItems);
-rightButton.addEventListener("click", changeItems);
-leftButton.addEventListener("click", setItems);
+window.addEventListener("load", () => {
+  changeItems();
+});
+rightButton.addEventListener("click", () => {
+  incrementPage();
+  changeItems(6);
+});
+leftButton.addEventListener("click", () => {
+  decrementPage();
+  changeItems();
+});
 
 // functions
 
-function setItems() {
-  pageNum.textContent = 1;
+function changeItems(num = 0) {
   items.forEach((item, index) => {
-    item.innerHTML = `<img src="${itemsObj[index].img}" alt=""/>
-    <div class="item-text">${itemsObj[index].description}</div>
+    item.innerHTML = `<img src="${itemsObj[index + num].img}" alt=""/>
+    <div class="item-text">${itemsObj[index + num].description}</div>
     <div class="rating">
     <span class="rat-stars"></span>
-    <span class="span rt-nums">${itemsObj[index].rating}</span>
+    <span class="span rt-nums">${itemsObj[index + num].rating}</span>
     </div>
-    <div class="price">$<span class="item-price">${itemsObj[index].price}</span></div>`;
+    <div class="price">$<span class="item-price">${itemsObj[index + num].price}</span></div>`;
   });
 }
 
-// let num
-function changeItems() {
-  pageNum.textContent = 2;
-  items.forEach((item, index) => {
-    item.innerHTML = `<img src="${itemsObj[index + 6].img}" alt=""/>
-    <div class="item-text">${itemsObj[index + 6].description}</div>
-    <div class="rating">
-    <span class="rat-stars"></span>
-    <span class="span rt-nums">${itemsObj[index + 6].rating}</span>
-    </div>
-    <div class="price">$<span class="item-price">${itemsObj[index + 6].price}</span></div>`;
-  });
+function incrementPage() {
+  pageNum.textContent++;
+}
+function decrementPage() {
+  +pageNum.textContent === 1 ? (pageNum.textContent = 1) : pageNum.textContent--;
 }

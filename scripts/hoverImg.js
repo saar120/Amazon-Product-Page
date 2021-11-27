@@ -4,24 +4,42 @@ const smallPicArr = document.querySelectorAll(".sml-pic");
 let mainImage = document.querySelector(".main-img-container");
 
 smallPicArr[0].addEventListener("mouseover", () => {
-  changeImg(0);
+  hoverImg(0);
 });
 smallPicArr[1].addEventListener("mouseover", () => {
-  changeImg(1);
+  hoverImg(1);
 });
 smallPicArr[2].addEventListener("mouseover", () => {
-  changeImg(2);
+  hoverImg(2);
 });
 smallPicArr[3].addEventListener("mouseover", () => {
-  changeImg(3);
+  hoverImg(3);
 });
 smallPicArr[4].addEventListener("mouseover", () => {
-  changeImg(4);
+  hoverImg(4);
 });
 smallPicArr[5].addEventListener("mouseover", () => {
-  changeImg(5);
+  hoverImg(5);
 });
 
 function changeImg(index) {
   mainImage.style.background = `url("/assets/images/hoverimg/hover${index}.jpg") no-repeat center center / contain`;
+}
+
+function persistBorder(index) {
+  smallPicArr[index].style.border = `1px solid #E67600`;
+  smallPicArr[index].style.boxShadow = `0px 0px 13px 0px #FF9151`;
+}
+
+function borderReset() {
+  smallPicArr.forEach((smallPic) => {
+    smallPic.style.border = `1px solid #cccccc`;
+    smallPic.style.boxShadow = `none`;
+  });
+}
+
+function hoverImg(index) {
+  changeImg(index);
+  borderReset();
+  persistBorder(index);
 }

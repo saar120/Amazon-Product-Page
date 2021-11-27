@@ -553,11 +553,14 @@
       outline: none;
       width: 80%; }
     .navbar .mobile-search button:last-of-type {
+      color: black;
       border: none;
       outline: none;
       border-radius: 0 6px 6px 0;
       background-color: #f3a847;
       width: 50px; }
+      .navbar .mobile-search button:last-of-type i {
+        color: black; }
   .main {
     min-width: 0;
     max-width: none;

@@ -54,6 +54,7 @@
     max-width: 100vw;
     width: 100%;
     .black-friday {
+      margin-bottom: 1.5rem;
       .img {
         margin: 0 auto;
         background: url("/assets/mobileimg/Karu_CM_ILM_en_2X._CB651321467_.jpg") no-repeat 0 0;
@@ -64,22 +65,30 @@
     }
     .main-container {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr 3fr;
+      grid-template-rows: 1fr 1fr;
       .item-data {
         min-width: 0;
         order: 1;
         h3 {
           font-size: 1.2rem;
         }
+        .amazon-choice-holder {
+          border: none;
+        }
+        .mobile-pic {
+          margin: 1rem auto;
+          background: url("/assets/mobileimg/31s71g8YD6L._AC_SY780_.jpg") no-repeat 0 0;
+          width: 150px;
+          height: 320px;
+        }
       }
-      .pictures {
-        display: none;
-        order: 2;
-      }
-      .side-panel {
-        margin: 0;
-        min-width: 0;
-        order: 3;
+    }
+    .side-panel {
+      margin: 0;
+      min-width: 0;
+      order: 2;
+      .buy-card {
+        margin: 1rem;
       }
     }
   }

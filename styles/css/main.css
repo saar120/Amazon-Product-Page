@@ -223,11 +223,12 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      flex-direction: column; }
+      flex-direction: column;
+      margin: 0 1.5rem; }
       .main .main-container .pictures .main-img {
         margin-top: 2.5rem;
         height: clamp(350px, 40vh, 452px);
-        width: clamp(570px, 35vw, 679px); }
+        width: clamp(400px, 35vw, 679px); }
         .main .main-container .pictures .main-img .main-img-container {
           background: url("/assets/images/pickelcohel.jpg");
           width: 100%;
@@ -559,24 +560,32 @@
     max-width: none;
     max-width: 100vw;
     width: 100%; }
-    .main .black-friday .img {
-      margin: 0 auto;
-      background: url("/assets/mobileimg/Karu_CM_ILM_en_2X._CB651321467_.jpg") no-repeat 0 0;
-      background-size: 320px 45px;
-      width: 320px;
-      height: 45px; }
+    .main .black-friday {
+      margin-bottom: 1.5rem; }
+      .main .black-friday .img {
+        margin: 0 auto;
+        background: url("/assets/mobileimg/Karu_CM_ILM_en_2X._CB651321467_.jpg") no-repeat 0 0;
+        background-size: 320px 45px;
+        width: 320px;
+        height: 45px; }
     .main .main-container {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr 3fr; }
+      grid-template-rows: 1fr 1fr; }
       .main .main-container .item-data {
         min-width: 0;
         order: 1; }
         .main .main-container .item-data h3 {
           font-size: 1.2rem; }
-      .main .main-container .pictures {
-        display: none;
-        order: 2; }
-      .main .main-container .side-panel {
-        margin: 0;
-        min-width: 0;
-        order: 3; } }
+        .main .main-container .item-data .amazon-choice-holder {
+          border: none; }
+        .main .main-container .item-data .mobile-pic {
+          margin: 1rem auto;
+          background: url("/assets/mobileimg/31s71g8YD6L._AC_SY780_.jpg") no-repeat 0 0;
+          width: 150px;
+          height: 320px; }
+    .main .side-panel {
+      margin: 0;
+      min-width: 0;
+      order: 2; }
+      .main .side-panel .buy-card {
+        margin: 1rem; } }
